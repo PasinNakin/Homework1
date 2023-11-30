@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        a {
+            border-right: 1px solid;
+            padding-right: 3px;
+        }
+
+        form{
+            border: 1px solid;
+            padding: 10px 40px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 70%;
+            /* display: flex;
+            flex-direction: column; */
+        }
+        label,textarea,input[type=text] {
+            display: block;
+            width: 80%;
+        }
+        input,select,textarea {
+            margin-bottom: 10px;
+        }
+
+
+        
+            
+
+    </style>
+</head>
+<body>
+    <a href="./index.html">Home</a>
+    <a href="./education.html">Education</a>
+    <a href="./work.html">Work Experience</a>
+    <a href="./contact.html">Contact Me</a>
+    <hr>
+    <h1>Contact Me</h1>
+    <form>
+        <p>Enter your info.</p>
+        <label for="yname">Your Name</label>
+        <input type="text" name="name" id="yname">
+        <label for="yemail">Your E-mail</label>
+        <input type="text" name="E-mail" id="yemail">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option disabled selected>Select..</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <label for="msg">Message</label>
+        <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+        <input type="submit" value="submit">
+        <input type="reset" value="clear">
+    </form>
+</body>
+</html>
